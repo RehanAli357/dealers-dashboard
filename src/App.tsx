@@ -3,6 +3,7 @@ import { router } from "./routes";
 import { ThemeProvider } from "@emotion/react";
 import theme from "./theme";
 import { CssBaseline } from "@mui/material";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <RouterProvider router={router} />
+        <ToastContainer />
       </ThemeProvider>
     </>
   );
